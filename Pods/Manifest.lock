@@ -1,0 +1,24 @@
+PODS:
+  - MSSTabbedPageViewController (0.3.4)
+  - REFormattedNumberField (1.1.6)
+  - RETableViewManager (1.7):
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - REValidation (0.1.4)
+  - SZLoadingTableViewController (0.1.1)
+
+DEPENDENCIES:
+  - MSSTabbedPageViewController
+  - RETableViewManager (~> 1.6)
+  - SZLoadingTableViewController
+
+SPEC CHECKSUMS:
+  MSSTabbedPageViewController: 32c856ae0fa6b5b6fd1c770771ad10fe3f4fb615
+  REFormattedNumberField: 70fc5fb1218ebd5ee9983820defd12806d5c6ec6
+  RETableViewManager: 0f24d796c42c0890d38c79cc9aeb3871e186726e
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  SZLoadingTableViewController: 9e1a701bc5c81448f2899c416f36c95d84799ea6
+
+PODFILE CHECKSUM: ae4b65ea4914248c7156341ffc986222f7a07cae
+
+COCOAPODS: 1.0.1

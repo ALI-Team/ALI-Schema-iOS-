@@ -1,0 +1,6 @@
+framework module SZLoadingTableViewController {
+  umbrella header "SZLoadingTableViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

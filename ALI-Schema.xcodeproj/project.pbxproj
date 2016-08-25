@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD698539C0071E3CE89A7A0 /* Pods_ALI_SchemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342007AE99D10B92040CFFFE /* Pods_ALI_SchemaUITests.framework */; };
+		353CF3AB6699E18547D1579E /* Pods_ALI_SchemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */; };
+		664488A01991497062B282E5 /* Pods_ALI_Schema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */; };
 		A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869E851D6F6FE7004E6995 /* AppDelegate.swift */; };
-		A1869E881D6F6FE7004E6995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869E871D6F6FE7004E6995 /* ViewController.swift */; };
 		A1869E8B1D6F6FE8004E6995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1869E891D6F6FE7004E6995 /* Main.storyboard */; };
 		A1869E8D1D6F6FE8004E6995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */; };
 		A1869E901D6F6FE8004E6995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1869E8E1D6F6FE8004E6995 /* LaunchScreen.storyboard */; };
 		A1869E9B1D6F6FE8004E6995 /* ALI_SchemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869E9A1D6F6FE8004E6995 /* ALI_SchemaTests.swift */; };
 		A1869EA61D6F6FE8004E6995 /* ALI_SchemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869EA51D6F6FE8004E6995 /* ALI_SchemaUITests.swift */; };
+		A1869EB81D6F7320004E6995 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869EB71D6F7320004E6995 /* MainViewController.swift */; };
+		A1869EBA1D6F7E90004E6995 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190B4CDC37622C206E36AC92 /* Pods-ALI-SchemaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaTests/Pods-ALI-SchemaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		342007AE99D10B92040CFFFE /* Pods_ALI_SchemaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALI_SchemaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALI_Schema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6E0DF006F0D8D619BF2AF9 /* Pods-ALI-SchemaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaTests/Pods-ALI-SchemaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EBF2C0CDB43CABEA3F18884 /* Pods-ALI-SchemaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaUITests/Pods-ALI-SchemaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63A04248A61E19100E0E2013 /* Pods-ALI-Schema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.release.xcconfig"; sourceTree = "<group>"; };
+		8E0DB0B7AB9A5C1953666B66 /* Pods-ALI-Schema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.debug.xcconfig"; sourceTree = "<group>"; };
 		A1869E821D6F6FE7004E6995 /* ALI-Schema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALI-Schema.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869E851D6F6FE7004E6995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1869E871D6F6FE7004E6995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1869E8A1D6F6FE7004E6995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1869E8F1D6F6FE8004E6995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		A1869EA11D6F6FE8004E6995 /* ALI-SchemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ALI-SchemaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869EA51D6F6FE8004E6995 /* ALI_SchemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALI_SchemaUITests.swift; sourceTree = "<group>"; };
 		A1869EA71D6F6FE8004E6995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1869EB71D6F7320004E6995 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALI_SchemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD80881585EE7A8029C9CE4D /* Pods-ALI-SchemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaUITests/Pods-ALI-SchemaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664488A01991497062B282E5 /* Pods_ALI_Schema.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353CF3AB6699E18547D1579E /* Pods_ALI_SchemaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD698539C0071E3CE89A7A0 /* Pods_ALI_SchemaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		067B30F0A010666F3A130A3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */,
+				A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */,
+				342007AE99D10B92040CFFFE /* Pods_ALI_SchemaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39415DBD8427D6388CC7A1DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DB0B7AB9A5C1953666B66 /* Pods-ALI-Schema.debug.xcconfig */,
+				63A04248A61E19100E0E2013 /* Pods-ALI-Schema.release.xcconfig */,
+				190B4CDC37622C206E36AC92 /* Pods-ALI-SchemaTests.debug.xcconfig */,
+				5D6E0DF006F0D8D619BF2AF9 /* Pods-ALI-SchemaTests.release.xcconfig */,
+				5EBF2C0CDB43CABEA3F18884 /* Pods-ALI-SchemaUITests.debug.xcconfig */,
+				BD80881585EE7A8029C9CE4D /* Pods-ALI-SchemaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1869E791D6F6FE7004E6995 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				A1869E991D6F6FE8004E6995 /* ALI-SchemaTests */,
 				A1869EA41D6F6FE8004E6995 /* ALI-SchemaUITests */,
 				A1869E831D6F6FE7004E6995 /* Products */,
+				39415DBD8427D6388CC7A1DF /* Pods */,
+				067B30F0A010666F3A130A3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				A1869E851D6F6FE7004E6995 /* AppDelegate.swift */,
-				A1869E871D6F6FE7004E6995 /* ViewController.swift */,
+				A1869EB71D6F7320004E6995 /* MainViewController.swift */,
+				A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */,
 				A1869E891D6F6FE7004E6995 /* Main.storyboard */,
 				A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */,
 				A1869E8E1D6F6FE8004E6995 /* LaunchScreen.storyboard */,
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1869EAA1D6F6FE8004E6995 /* Build configuration list for PBXNativeTarget "ALI-Schema" */;
 			buildPhases = (
+				9F9597709707978DD52003B5 /* [CP] Check Pods Manifest.lock */,
 				A1869E7E1D6F6FE7004E6995 /* Sources */,
 				A1869E7F1D6F6FE7004E6995 /* Frameworks */,
 				A1869E801D6F6FE7004E6995 /* Resources */,
+				E12ACA29CE88A193CCE2F72A /* [CP] Embed Pods Frameworks */,
+				ADFA634DEA344FCF83D2F935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1869EAD1D6F6FE8004E6995 /* Build configuration list for PBXNativeTarget "ALI-SchemaTests" */;
 			buildPhases = (
+				34006838BC149462A389A6D0 /* [CP] Check Pods Manifest.lock */,
 				A1869E921D6F6FE8004E6995 /* Sources */,
 				A1869E931D6F6FE8004E6995 /* Frameworks */,
 				A1869E941D6F6FE8004E6995 /* Resources */,
+				E79BF7DDE2E62F331FB8C81A /* [CP] Embed Pods Frameworks */,
+				ABC5B6F62990146F6EA9143C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1869EB01D6F6FE8004E6995 /* Build configuration list for PBXNativeTarget "ALI-SchemaUITests" */;
 			buildPhases = (
+				B8AFF0E7C686A0154ED6611D /* [CP] Check Pods Manifest.lock */,
 				A1869E9D1D6F6FE8004E6995 /* Sources */,
 				A1869E9E1D6F6FE8004E6995 /* Frameworks */,
 				A1869E9F1D6F6FE8004E6995 /* Resources */,
+				9A182B8C138DFCA6A6BD06F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +302,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34006838BC149462A389A6D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A182B8C138DFCA6A6BD06F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALI-SchemaUITests/Pods-ALI-SchemaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9597709707978DD52003B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC5B6F62990146F6EA9143C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALI-SchemaTests/Pods-ALI-SchemaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADFA634DEA344FCF83D2F935 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AFF0E7C686A0154ED6611D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E12ACA29CE88A193CCE2F72A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E79BF7DDE2E62F331FB8C81A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ALI-SchemaTests/Pods-ALI-SchemaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1869E7E1D6F6FE7004E6995 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1869E881D6F6FE7004E6995 /* ViewController.swift in Sources */,
+				A1869EBA1D6F7E90004E6995 /* ScheduleViewController.swift in Sources */,
 				A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */,
+				A1869EB81D6F7320004E6995 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +572,7 @@
 		};
 		A1869EAB1D6F6FE8004E6995 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0DB0B7AB9A5C1953666B66 /* Pods-ALI-Schema.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ALI-Schema/Info.plist";
@@ -408,6 +584,7 @@
 		};
 		A1869EAC1D6F6FE8004E6995 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A04248A61E19100E0E2013 /* Pods-ALI-Schema.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ALI-Schema/Info.plist";
@@ -419,6 +596,7 @@
 		};
 		A1869EAE1D6F6FE8004E6995 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190B4CDC37622C206E36AC92 /* Pods-ALI-SchemaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "ALI-SchemaTests/Info.plist";
@@ -431,6 +609,7 @@
 		};
 		A1869EAF1D6F6FE8004E6995 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D6E0DF006F0D8D619BF2AF9 /* Pods-ALI-SchemaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "ALI-SchemaTests/Info.plist";
@@ -443,6 +622,7 @@
 		};
 		A1869EB11D6F6FE8004E6995 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBF2C0CDB43CABEA3F18884 /* Pods-ALI-SchemaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "ALI-SchemaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +634,7 @@
 		};
 		A1869EB21D6F6FE8004E6995 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD80881585EE7A8029C9CE4D /* Pods-ALI-SchemaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "ALI-SchemaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +663,7 @@
 				A1869EAC1D6F6FE8004E6995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1869EAD1D6F6FE8004E6995 /* Build configuration list for PBXNativeTarget "ALI-SchemaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +672,7 @@
 				A1869EAF1D6F6FE8004E6995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1869EB01D6F6FE8004E6995 /* Build configuration list for PBXNativeTarget "ALI-SchemaUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +681,7 @@
 				A1869EB21D6F6FE8004E6995 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,7 +22,7 @@ class ScheduleViewController: SZLoadingTableViewController {
         
         if ((NSUserDefaults.standardUserDefaults().stringForKey("klass")?.isEmpty == false) && (NSUserDefaults.standardUserDefaults().stringForKey("school")?.isEmpty == false)) {
             
-            //self.startLoading();
+            self.startLoading();
             
             NSURLConnection.sendAsynchronousRequest(NSURLRequest.init(URL: NSURL.init(string: "http://alite.am/schema/getjson.php?week=" + String(NSUserDefaults.standardUserDefaults().integerForKey("week")) + "&scid=" + String(NSUserDefaults.standardUserDefaults().stringForKey("school")!) + "&clid=" + String(NSUserDefaults.standardUserDefaults().stringForKey("klass")!) + "&day=" + String(self.day) + "&getweek=0")!), queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse?, data:NSData?, error:NSError?) -> Void in
                 
@@ -31,7 +31,7 @@ class ScheduleViewController: SZLoadingTableViewController {
                     do {
                         let lessonsArray = (try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary).objectForKey("lessons");
                         
-                        //self.stopLoading();
+                        self.stopLoading();
                         
                         let section = RETableViewSection();
                         
@@ -41,10 +41,14 @@ class ScheduleViewController: SZLoadingTableViewController {
                                 self.tableView.deselectRowAtIndexPath(item.indexPath(), animated: true);
                             });
                             
+                            item.style = UITableViewCellStyle.Subtitle;
+                            item.detailLabelText = String(lesson.objectForKey("start")!) + " - " + String(lesson.objectForKey("end")!);
+                            
                             section.addItem(item);
                         }
                         
                         self.manager.addSection(section);
+                        self.tableView.reloadData();
                         
                     } catch {
                         print("error");

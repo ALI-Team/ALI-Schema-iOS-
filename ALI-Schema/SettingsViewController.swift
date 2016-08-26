@@ -24,6 +24,8 @@ class SettingsViewController: UITableViewController {
         
         let school = RERadioItem(title: "Skola", value: "Ingen", selectionHandler: {(item:RERadioItem!) -> Void in
             
+            self.tableView.deselectRowAtIndexPath(item.indexPath(), animated: true);
+            
             if let jsonData = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource("schools", ofType: "json")!) {
             
                 do {
@@ -39,7 +41,8 @@ class SettingsViewController: UITableViewController {
                             list.addObject(namn + " (" + stad + ")");
                         }
                         
-                        let optionsController = RETableViewOptionsController(item: item, options:list as [AnyObject], multipleChoice:false, completionHandler:{(item:RETableViewItem!) -> Void in
+                        let optionsController = RETableViewOptionsController(item: item, options:list as [AnyObject], multipleChoice:false, completionHandler:{(selectedItem:RETableViewItem!) -> Void in
+                            NSUserDefaults.standardUserDefaults().setObject(schoolList.objectAtIndex(selectedItem.indexPath().row).objectForKey!("id"), forKey: "school");
                             item.reloadRowWithAnimation(UITableViewRowAnimation.None);
                         });
                         
@@ -55,6 +58,7 @@ class SettingsViewController: UITableViewController {
         
         klass.onChange = {(item:RETextItem!) -> Void in
             NSUserDefaults.standardUserDefaults().setObject(item.value, forKey: "klass");
+            NSUserDefaults.standardUserDefaults().synchronize();
         }
         
         general.addItem(school);
@@ -73,5 +77,9 @@ class SettingsViewController: UITableViewController {
             }
         }
         return nil
+    }
+    
+    @IBAction func back(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil);
     }
 }

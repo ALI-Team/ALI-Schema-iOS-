@@ -12,6 +12,7 @@ import RETableViewManager
 
 class ScheduleViewController: SZLoadingTableViewController {
     
+    var day: Int!;
     var manager: RETableViewManager!;
     
     override func viewDidLoad() {
@@ -21,7 +22,36 @@ class ScheduleViewController: SZLoadingTableViewController {
         
         if ((NSUserDefaults.standardUserDefaults().stringForKey("klass")?.isEmpty == false) && (NSUserDefaults.standardUserDefaults().stringForKey("school")?.isEmpty == false)) {
             
-            self.startLoading();
+            //self.startLoading();
+            
+            NSURLConnection.sendAsynchronousRequest(NSURLRequest.init(URL: NSURL.init(string: "http://alite.am/schema/getjson.php?week=" + String(NSUserDefaults.standardUserDefaults().integerForKey("week")) + "&scid=" + String(NSUserDefaults.standardUserDefaults().stringForKey("school")!) + "&clid=" + String(NSUserDefaults.standardUserDefaults().stringForKey("klass")!) + "&day=" + String(self.day) + "&getweek=0")!), queue: NSOperationQueue.mainQueue(), completionHandler: {(response:NSURLResponse?, data:NSData?, error:NSError?) -> Void in
+                
+                if ((error == nil) && (data != nil)) {
+                    
+                    do {
+                        let lessonsArray = (try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary).objectForKey("lessons");
+                        
+                        //self.stopLoading();
+                        
+                        let section = RETableViewSection();
+                        
+                        for lesson in lessonsArray as! [NSDictionary] {
+                            
+                            let item = RETableViewItem(title: String(lesson.objectForKey("info")!), accessoryType: UITableViewCellAccessoryType.None, selectionHandler: {(item:RETableViewItem!) -> Void in
+                                self.tableView.deselectRowAtIndexPath(item.indexPath(), animated: true);
+                            });
+                            
+                            section.addItem(item);
+                        }
+                        
+                        self.manager.addSection(section);
+                        
+                    } catch {
+                        print("error");
+                    }
+                    
+                }
+            });
         }
             
         else {

@@ -11,8 +11,15 @@ import MSSTabbedPageViewController
 
 class MainViewController: MSSTabbedPageViewController {
 
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad();
+        
+        let calendar = NSCalendar.currentCalendar();
+        let date = NSDate();
+        let currentWeek = calendar.component(NSCalendarUnit.WeekOfYear, fromDate: date);
+        
+        NSUserDefaults.standardUserDefaults().setInteger(currentWeek, forKey: "week");
+        NSUserDefaults.standardUserDefaults().synchronize();
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -27,9 +34,10 @@ class MainViewController: MSSTabbedPageViewController {
         
         let days = [].mutableCopy();
         
-        for _ in 1...5 {
+        for i in 1...5 {
             
-            let schedule = self.storyboard?.instantiateViewControllerWithIdentifier("schedule");
+            let schedule = self.storyboard?.instantiateViewControllerWithIdentifier("schedule") as! ScheduleViewController;
+            schedule.day = i;
             days.addObject(schedule);
         }
         

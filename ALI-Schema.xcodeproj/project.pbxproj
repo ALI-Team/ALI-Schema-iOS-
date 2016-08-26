@@ -10,6 +10,8 @@
 		1FD698539C0071E3CE89A7A0 /* Pods_ALI_SchemaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342007AE99D10B92040CFFFE /* Pods_ALI_SchemaUITests.framework */; };
 		353CF3AB6699E18547D1579E /* Pods_ALI_SchemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */; };
 		664488A01991497062B282E5 /* Pods_ALI_Schema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */; };
+		A112F7B01D70385800454857 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A112F7AF1D70385800454857 /* SettingsViewController.swift */; };
+		A185B8041D70416C00FCD265 /* schools.json in Resources */ = {isa = PBXBuildFile; fileRef = A185B8031D70416C00FCD265 /* schools.json */; };
 		A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869E851D6F6FE7004E6995 /* AppDelegate.swift */; };
 		A1869E8B1D6F6FE8004E6995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1869E891D6F6FE7004E6995 /* Main.storyboard */; };
 		A1869E8D1D6F6FE8004E6995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		5EBF2C0CDB43CABEA3F18884 /* Pods-ALI-SchemaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaUITests/Pods-ALI-SchemaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		63A04248A61E19100E0E2013 /* Pods-ALI-Schema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.release.xcconfig"; sourceTree = "<group>"; };
 		8E0DB0B7AB9A5C1953666B66 /* Pods-ALI-Schema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.debug.xcconfig"; sourceTree = "<group>"; };
+		A112F7AF1D70385800454857 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A185B8031D70416C00FCD265 /* schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schools.json; sourceTree = "<group>"; };
 		A1869E821D6F6FE7004E6995 /* ALI-Schema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALI-Schema.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869E851D6F6FE7004E6995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1869E8A1D6F6FE7004E6995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,10 +146,12 @@
 				A1869E851D6F6FE7004E6995 /* AppDelegate.swift */,
 				A1869EB71D6F7320004E6995 /* MainViewController.swift */,
 				A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */,
+				A112F7AF1D70385800454857 /* SettingsViewController.swift */,
 				A1869E891D6F6FE7004E6995 /* Main.storyboard */,
 				A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */,
 				A1869E8E1D6F6FE8004E6995 /* LaunchScreen.storyboard */,
 				A1869E911D6F6FE8004E6995 /* Info.plist */,
+				A185B8031D70416C00FCD265 /* schools.json */,
 			);
 			path = "ALI-Schema";
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				A1869E901D6F6FE8004E6995 /* LaunchScreen.storyboard in Resources */,
 				A1869E8D1D6F6FE8004E6995 /* Assets.xcassets in Resources */,
 				A1869E8B1D6F6FE8004E6995 /* Main.storyboard in Resources */,
+				A185B8041D70416C00FCD265 /* schools.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +440,7 @@
 				A1869EBA1D6F7E90004E6995 /* ScheduleViewController.swift in Sources */,
 				A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */,
 				A1869EB81D6F7320004E6995 /* MainViewController.swift in Sources */,
+				A112F7B01D70385800454857 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

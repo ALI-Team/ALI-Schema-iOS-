@@ -18,7 +18,7 @@ class MainViewController: MSSTabbedPageViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated);
         
-        self.tabBarView?.tabStyle = MSSTabStyle.Text;
+        self.tabBarView!.tabStyle = MSSTabStyle.Text;
         self.tabBarView?.sizingStyle = MSSTabSizingStyle.Distributed;
         self.tabBarView?.tintColor = UIColor(red:0.00, green:0.59, blue:0.53, alpha:1.0);
     }

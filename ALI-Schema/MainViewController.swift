@@ -8,11 +8,16 @@
 
 import UIKit
 import MSSTabbedPageViewController
+import GKActionSheetPicker
 
 class MainViewController: MSSTabbedPageViewController {
-
+    
+    var weekPicker: GKActionSheetPicker!;
+    
     override func viewDidLoad(){
         super.viewDidLoad();
+        
+        self.tabBarController?.tabBar.tintColor = UIColor(red:0.00, green:0.59, blue:0.53, alpha:1.0);
         
         let calendar = NSCalendar.currentCalendar();
         let date = NSDate();
@@ -60,5 +65,16 @@ class MainViewController: MSSTabbedPageViewController {
         default: break
             
         }
+    }
+    
+    @IBAction func selectWeek(sender: AnyObject) {
+        
+        let weeks: NSMutableArray = [];
+        
+        for i in 1...52 {
+            weeks.addObject(String(i));
+        }
+        
+        self.weekPicker = GKActionSheetPicker();
     }
 }

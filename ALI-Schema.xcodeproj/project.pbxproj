@@ -11,6 +11,7 @@
 		353CF3AB6699E18547D1579E /* Pods_ALI_SchemaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */; };
 		664488A01991497062B282E5 /* Pods_ALI_Schema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */; };
 		A112F7B01D70385800454857 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A112F7AF1D70385800454857 /* SettingsViewController.swift */; };
+		A16CE26E1D710989005E8D36 /* FoodSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16CE26D1D710989005E8D36 /* FoodSettingsViewController.swift */; };
 		A185B8041D70416C00FCD265 /* schools.json in Resources */ = {isa = PBXBuildFile; fileRef = A185B8031D70416C00FCD265 /* schools.json */; };
 		A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1869E851D6F6FE7004E6995 /* AppDelegate.swift */; };
 		A1869E8B1D6F6FE8004E6995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1869E891D6F6FE7004E6995 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		63A04248A61E19100E0E2013 /* Pods-ALI-Schema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.release.xcconfig"; sourceTree = "<group>"; };
 		8E0DB0B7AB9A5C1953666B66 /* Pods-ALI-Schema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-Schema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-Schema/Pods-ALI-Schema.debug.xcconfig"; sourceTree = "<group>"; };
 		A112F7AF1D70385800454857 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A16CE26D1D710989005E8D36 /* FoodSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodSettingsViewController.swift; sourceTree = "<group>"; };
 		A185B8031D70416C00FCD265 /* schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schools.json; sourceTree = "<group>"; };
 		A1869E821D6F6FE7004E6995 /* ALI-Schema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALI-Schema.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1869E851D6F6FE7004E6995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		A1869EA71D6F6FE8004E6995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1869EB71D6F7320004E6995 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		A1BB6CDD1D710D470021D740 /* GKActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GKActionSheetPicker.framework; path = "../../../Library/Developer/Xcode/DerivedData/ALI-Schema-bewluxajzfzwxaftgqaadylikhiz/Build/Products/Debug-iphoneos/GKActionSheetPicker/GKActionSheetPicker.framework"; sourceTree = "<group>"; };
 		A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALI_SchemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD80881585EE7A8029C9CE4D /* Pods-ALI-SchemaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALI-SchemaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALI-SchemaUITests/Pods-ALI-SchemaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +101,7 @@
 		067B30F0A010666F3A130A3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1BB6CDD1D710D470021D740 /* GKActionSheetPicker.framework */,
 				4FF6A3D61D433B59C6DECEED /* Pods_ALI_Schema.framework */,
 				A2CE4AC268F4873C333616F3 /* Pods_ALI_SchemaTests.framework */,
 				342007AE99D10B92040CFFFE /* Pods_ALI_SchemaUITests.framework */,
@@ -147,6 +151,7 @@
 				A1869EB71D6F7320004E6995 /* MainViewController.swift */,
 				A1869EB91D6F7E90004E6995 /* ScheduleViewController.swift */,
 				A112F7AF1D70385800454857 /* SettingsViewController.swift */,
+				A16CE26D1D710989005E8D36 /* FoodSettingsViewController.swift */,
 				A1869E891D6F6FE7004E6995 /* Main.storyboard */,
 				A1869E8C1D6F6FE8004E6995 /* Assets.xcassets */,
 				A1869E8E1D6F6FE8004E6995 /* LaunchScreen.storyboard */,
@@ -439,6 +444,7 @@
 			files = (
 				A1869EBA1D6F7E90004E6995 /* ScheduleViewController.swift in Sources */,
 				A1869E861D6F6FE7004E6995 /* AppDelegate.swift in Sources */,
+				A16CE26E1D710989005E8D36 /* FoodSettingsViewController.swift in Sources */,
 				A1869EB81D6F7320004E6995 /* MainViewController.swift in Sources */,
 				A112F7B01D70385800454857 /* SettingsViewController.swift in Sources */,
 			);

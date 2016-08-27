@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8DFCD0BFB41CE19810C47A4EF4775EDE'
+               BlueprintIdentifier = '54D14B6BB025F642D9A4ABCAB48D9063'
                BlueprintName = 'SZLoadingTableViewController-SZLoadingTableViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SZLoadingTableViewController.bundle'>

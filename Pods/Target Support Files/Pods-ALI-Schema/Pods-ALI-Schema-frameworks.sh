@@ -84,6 +84,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/GKActionSheetPicker/GKActionSheetPicker.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MSSTabbedPageViewController/MSSTabbedPageViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/REFormattedNumberField/REFormattedNumberField.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RETableViewManager/RETableViewManager.framework"
@@ -91,6 +92,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SZLoadingTableViewController/SZLoadingTableViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/GKActionSheetPicker/GKActionSheetPicker.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MSSTabbedPageViewController/MSSTabbedPageViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/REFormattedNumberField/REFormattedNumberField.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RETableViewManager/RETableViewManager.framework"

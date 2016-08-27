@@ -9,6 +9,7 @@ target 'ALI-Schema' do
   pod 'MSSTabbedPageViewController'
   pod 'SZLoadingTableViewController'
   pod 'RETableViewManager', '~> 1.6'
+  pod "GKActionSheetPicker"
 
   target 'ALI-SchemaTests' do
     inherit! :search_paths

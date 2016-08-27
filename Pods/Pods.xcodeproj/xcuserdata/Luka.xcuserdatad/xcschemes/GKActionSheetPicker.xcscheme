@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E753044C2269DCA0C2C90361D6788744'
-               BlueprintName = 'REValidation'
+               BlueprintIdentifier = 'CD2EDA8537D7EC32FE184F4D3468B314'
+               BlueprintName = 'GKActionSheetPicker'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'REValidation.framework'>
+               BuildableName = 'GKActionSheetPicker.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
